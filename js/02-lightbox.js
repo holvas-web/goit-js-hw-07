@@ -8,6 +8,8 @@ galleryItems.forEach(element => {
 	const galleryLink = document.createElement('a')
 	galleryLink.className = 'gallery__link'
 	galleryLink.href = element.original
+	const galleryLi = document.createElement('li')
+	galleryLi.className = 'gallery__item'
 	const galleryImage = document.createElement('img')
 	galleryImage.className = 'gallery__image'
 	galleryImage.src = element.preview
@@ -22,4 +24,3 @@ gallery.append(...items)
 new SimpleLightbox('.gallery a', {
 	captionDelay: 250
 })
-
